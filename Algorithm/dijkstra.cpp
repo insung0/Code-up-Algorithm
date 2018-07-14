@@ -1,5 +1,6 @@
-// O(n^3)
-// DP
+// O(nlog n)
+// priority queue
+
 #include <iostream>
 #include <vector>
 #include <queue>
