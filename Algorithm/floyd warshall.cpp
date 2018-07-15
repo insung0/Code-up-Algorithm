@@ -1,3 +1,6 @@
+// O(n^3)
+// DP
+
 #include <stdio.h>
 
 int number = 4;
@@ -20,11 +23,11 @@ void floydWarshall() {
 		}
 	}
 	
-	// k = °ÅÃÄ°¡´Â ³ëµå
+	// k = ê±°ì³ê°€ëŠ” ë…¸ë“œ
 	for(int k = 0; k < number; k++) {
-		// i = Ãâ¹ß ³ëµå
+		// i = ì¶œë°œ ë…¸ë“œ
 		for(int i = 0; i < number; i++) {
-			// j = µµÂø ³ëµå 
+			// j = ë„ì°© ë…¸ë“œ 
 			for(int j = 0; j < number; j++) {
 				if(d[i][k] + d[k][j] < d[i][j]) {
 					d[i][j] = d[i][k] + d[k][j];
